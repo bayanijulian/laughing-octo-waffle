@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>PACE Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-9 col-lg-6">
+                <div class="card">
+                    <center>
+                        <h1 class="logo-txt">PACE Bank <i class="fas fa-university"></i></h1>
+                    </center>
+                    
+                    <div class="card-body" id="loginCard">
+                        <h5 class="card-title">Login</h5>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="emailLogin">Email</label>
+                                <input type="email" class="form-control" id="emailLogin" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordLogin">Password</label>
+                                <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+                            </div>
+                            <button id="loginBtn" type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+                        <p>Don't have an account? <a href="#" id="registerLink"> Sign up</a> </p>
+                    </div>
+                    <div class="card-body" id="registerCard">
+                        <h5 class="card-title">Sign up!</h5>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="emailRegister">Email</label>
+                                <input type="email" class="form-control" id="emailRegister" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstNameRegister">First Name</label>
+                                <input type="text" class="form-control" id="firstNameRegister" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastNameRegister">Last Name</label>
+                                <input type="text" class="form-control" id="lastNameRegister" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordRegister">Password</label>
+                                <input type="password" class="form-control" id="passwordRegister" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmRegister">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmRegister" placeholder="Confirm Password">
+                            </div>
+                            <button id="registerBtn" type="submit" class="btn btn-primary btn-block">Sign up</button>
+                        </form>
+                        <p>Already have an account? <a href="#" id="loginLink"> Login</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/66c73a7c8d.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

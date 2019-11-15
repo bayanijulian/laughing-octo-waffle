@@ -1,0 +1,16 @@
+main {
+    margin-top: 5%;
+}
+
+#loginBtn, #registerBtn {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+card {
+    margin: auto;
+}
+
+.logo-txt {
+    margin: 12px;
+}
