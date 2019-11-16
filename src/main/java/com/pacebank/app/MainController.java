@@ -27,7 +27,7 @@ public class MainController {
         user.setLasttName(last);
         user.setPassword(password);
 		userRepository.save(user);
-		return "Saved";
+		return "home";
 	}
 
 	@PostMapping(path="/login")
@@ -43,5 +43,16 @@ public class MainController {
     @GetMapping(path="/")
 	public String index() {
         return "index";
-	}
+    }
+    
+    @GetMapping(path="/apply")
+	public String apply() {
+        return "apply";
+    }
+    
+    @PostMapping(path="/submitApplication")
+	public @ResponseBody String login(@RequestParam Integer salary, @RequestParam Integer yearsEmployed,  @RequestParam Integer age) {
+        
+        return "Success! Your application is being processed. We will update you as soon as we can.";
+    }
 }
